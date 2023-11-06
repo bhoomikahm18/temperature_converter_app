@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
+  const celsius = 0;
+  const fahrenheit = 0;
+  const kelvin = 0;
+
+  function onCelsiusChange() {
+
+  }
+  function onFahrenheitChange() {
+
+  }
+  function onKelviChange() {
+
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ "textAlign": "center" }}>
+      <h2>Celsius: <Child temperature={celsius} onTempeatureChange={onCelsiusChange} /></h2>
+      <h2>Fahrenheit: <Child temperature={fahrenheit} onTempeatureChange={onFahrenheitChange} /></h2>
+      <h2>Kelvin: <Child temperature={kelvin} onTempeatureChange={onKelviChange} /></h2>
     </div>
   );
 }
